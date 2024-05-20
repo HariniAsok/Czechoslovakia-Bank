@@ -28,3 +28,15 @@ The data about the clients and their accounts consist of following relations:
 -relation demographic data (77 objects in the file DISTRICT.ASC) - each record describes demographic characteristics of a district.
 
 Each account has both static characteristics (e.g. date of creation, address of the branch) given in relation "account" and dynamic characteristics (e.g. payments debited or credited, balances) given in relations "permanent order" and "transaction". Relation "client" describes characteristics of persons who can manipulate with the accounts. One client can have more accounts, more clients can manipulate with single account; clients and accounts are related together in relation "disposition". Relations "loan" and "credit card" describe some services which the bank offers to its clients; more credit cards can be issued to an account, at most one loan can be granted for an account. Relation "demographic data" gives some publicly available information about the districts (e.g. the unemployment rate); additional information about the clients can be deduced from this.
+
+
+Key Findings 
+
+What is the demographic profile of the bank's clients and how does it vary across districts?
+How the banks have performed over the years. Give their detailed analysis year & month-wise.
+What are the most common types of accounts and how do they differ in terms of usage and profitability?
+Which types of cards are most frequently used by the bank's clients and what is the overall profitability of the credit card business?
+What are the major expenses of the bank and how can they be reduced to improve profitability?
+What is the bank’s loan portfolio and how does it vary across different purposes and client segments?
+How can the bank improve its customer service and satisfaction levels?
+Can the bank introduce new financial products or services to attract more customers and increase profitability?
