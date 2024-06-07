@@ -1,50 +1,29 @@
-# Czechoslovakia-Bank
+Czechoslovakia Bank Analysis
 
-DESCRIPTION
-Real anonymized Czech bank transactions, account info, and loan records released for PKDD'99 Discovery Challenge.
-SUMMARY
-Update 10/12/19: Additional info about the data - https://webpages.uncc.edu/mirsad/itcs6265/group1/index.html
-^^VERY HELPFUL, especially relative to birthday/age/gender customer info (strangely encoded in the raw data).
-My attempt to reformat/transalate/clean some of this data: https://data.world/lpetrocelli/some-translatedreformatted-czech-banking-data
+This project analyzed the financial data of the Czechoslovakia Bank using Python to identify trends, patterns, and potential risks within the bank's operations. The data was initially cleaned and prepared using SQL before being integrated and analyzed in Python.
 
-Data from a real Czech bank. From 1999.
+Problem Statement:
 
-The data about the clients and their accounts consist of following relations:
+The Czechoslovakia Bank needed to gain deeper insights into its financial data to make informed decisions about its products, services, and overall operations. This included understanding customer demographics, credit card usage, loan portfolio composition, and potential areas for improvement.
+Solution
 
--relation account (4500 objects in the file ACCOUNT.ASC) - each record describes static characteristics of an account,
+The project utilized the following steps to address the problem statement:
 
--relation client (5369 objects in the file CLIENT.ASC) - each record describes characteristics of a client,
+Data Cleaning and Preparation (SQL): The initial financial data was cleaned and prepared using SQL to ensure its accuracy and consistency before analysis.
+   
+ Data Integration (Python): Cleaned data from various sources was integrated and merged into a unified dataset for comprehensive analysis.
+    
+Exploratory Data Analysis (Python): The integrated dataset was analyzed in Python to identify trends, patterns, and relationships within the bank's financial activities. Techniques like visualization (bar graphs) were likely employed to explore the data.
 
--relation disposition (5369 objects in the file DISP.ASC) - each record relates together a client with an account i.e. this relation describes the rights of clients to operate accounts,
+Project Goals
 
--relation permanent order (6471 objects in the file ORDER.ASC) - each record describes characteristics of a payment order,
+The project aimed to achieve the following goals:
 
--relation transaction (1056320 objects in the file TRANS.ASC) - each record describes one transaction on an account,
+   * Understand the demographic profile of the bank's clients and its variation across districts.
+   * Analyze credit card usage patterns and profitability to optimize services.
+   * Identify major bank expenses and potential areas for cost reduction.
+   * Evaluate the loan portfolio across purposes and client segments to inform risk management and lending strategies.
+   * Explore opportunities to improve customer service and satisfaction.
+   * Identify potential new financial products or services that could diversify offerings, attract new clients, and increase profitability.
 
--relation loan (682 objects in the file LOAN.ASC) - each record describes a loan granted for a given account,
-
--relation credit card (892 objects in the file CARD.ASC) - each record describes a credit card issued to an account,
-
--relation demographic data (77 objects in the file DISTRICT.ASC) - each record describes demographic characteristics of a district.
-
-Each account has both static characteristics (e.g. date of creation, address of the branch) given in relation "account" and dynamic characteristics (e.g. payments debited or credited, balances) given in relations "permanent order" and "transaction". Relation "client" describes characteristics of persons who can manipulate with the accounts. One client can have more accounts, more clients can manipulate with single account; clients and accounts are related together in relation "disposition". Relations "loan" and "credit card" describe some services which the bank offers to its clients; more credit cards can be issued to an account, at most one loan can be granted for an account. Relation "demographic data" gives some publicly available information about the districts (e.g. the unemployment rate); additional information about the clients can be deduced from this.
-
-
-
-Key Findings 
-
-What is the demographic profile of the bank's clients and how does it vary across districts?
-
-How the banks have performed over the years. Give their detailed analysis year & month-wise.
-
-What are the most common types of accounts and how do they differ in terms of usage and profitability?
-
-Which types of cards are most frequently used by the bank's clients and what is the overall profitability of the credit card business?
-
-What are the major expenses of the bank and how can they be reduced to improve profitability?
-
-What is the bank’s loan portfolio and how does it vary across different purposes and client segments?
-
-How can the bank improve its customer service and satisfaction levels?
-
-Can the bank introduce new financial products or services to attract more customers and increase profitability?
+This analysis aimed to provide valuable insights to the   Czechoslovakia Bank, enabling them to make data-driven decisions and improve their overall financial performance.
